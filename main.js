@@ -1,5 +1,8 @@
 const { app, BrowserWindow } = require('electron')
+const url = require('url')
 const path = require('path')
+
+let win
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -7,7 +10,11 @@ const createWindow = () => {
       height: 600
     })
   
-    win.loadFile('View/index.html')
+    win.loadURL(url.format ({
+      pathname: path.join(__dirname, 'View/index.html'),
+      protocol: 'file:',
+      slashes: true
+   }))
   }
 
   app.whenReady().then(() => {
