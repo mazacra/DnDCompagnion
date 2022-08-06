@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset = "UTF-8">
-      <title>Hello World!</title>
-      
-      <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-
-      <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
-      <script src="../node_modules/popper/index.js"></script>
-      <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-   </head>
+  <head>
+    <meta charset = "UTF-8">
+    <title>Home</title>
+    
+    <link rel="stylesheet" href="../contents/css/main.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="../node_modules/popper/index.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
    
-   <body>
-      <div class = "container">
-        <div class="row">
-          <h1 class="col-6">Test</h1>
-          <h1 class="col-6">Test 2</h1>
-
-        </div>
-         <h3 id = "click-counter"></h3>
-         <button class = "btn btn-success" id = "countbtn">Click here</button>
-      </div>
+  <body class="bg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark row pl-3">
+      <a class="navbar-brand col-1 pl-3" href="#">
+        <img src="../contents/Images/logo.png" width="50px" height="30" class="d-inline-block align-top" alt="">
+      </a>
+      <a class="nav-link col-1 text-light" href="../View/monstre.html">Monstres</a>
+    </nav>
    
-      <script>
-        $('#countbtn').click(function(){
-          $('h1').text("allo")
-        })
-      </script>
-    </body>
+    <div class="row pt-5">
+      <div class="col-4"></div>
+      <h1 class="col-4 text-center" style="color:rgb(153, 0, 0)">Compagion</h1>
+      <div class="col-4"></div>
+    </div>
+    
+    <div class="row pt-5">
+      <div class="col-4"></div>
+      <a href="../View/monstre.html" class="col-4 btn btn-danger text-center">Gestion des monstres</a>
+      <div class="col-4"></div>
+    </div>
+
+    <script>
+    </script>
+  </body>
 
 </html>

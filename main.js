@@ -10,6 +10,8 @@ const createWindow = () => {
       height: 600
     })
   
+    win.maximize()
+
     win.loadURL(url.format ({
       pathname: path.join(__dirname, 'View/index.html'),
       protocol: 'file:',
